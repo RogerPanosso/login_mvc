@@ -33,7 +33,6 @@
                 </li>
                 <?php
                   //realiza verificação se sessão de login de usuário está setada e valida
-                  $_SESSION["login"] = "teste";
                   if(isset($_SESSION["login"]) and !empty($_SESSION["login"])) {
                 ?>
                 <span class="navbar-text text-success">
