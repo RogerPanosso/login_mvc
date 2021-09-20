@@ -28,7 +28,7 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="http://localhost/login_mvc/home">
-                    <i class="fa fa-home"></i><span class="nav-link-text">Home</span>
+                    <i class="fa fa-home"></i><span class="nav-link-text ml-1">Home</span>
                   </a>
                 </li>
                 <?php
@@ -40,7 +40,7 @@
                 </span>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/login_mvc/loginuser/logout">
-                    <i class="fa fa-power-off"></i><span class="nav-link-text">Sair</span>
+                    <i class="fa fa-power-off"></i><span class="nav-link-text ml-1">Sair</span>
                   </a>
                 </li>
                 <?php
@@ -48,12 +48,12 @@
                 ?>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/login_mvc/cadastrouser">
-                    <i class="fa fa-plus-square"></i><span class="nav-link-text">Cadastre-se</span>
+                    <i class="fa fa-plus-square"></i><span class="nav-link-text ml-1">Cadastre-se</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/login_mvc/loginuser">
-                    <i class="fa fa-sigin-alt"></i><span class="nav-link-text">Fazer Login</span>
+                    <i class="fa fa-sigin-alt"></i><span class="nav-link-text ml-1">Fazer Login</span>
                   </a>
                 </li>
                 <?php
