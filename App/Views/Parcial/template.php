@@ -53,7 +53,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/login_mvc/loginuser">
-                    <i class="fa fa-sigin-alt"></i><span class="nav-link-text ml-1">Fazer Login</span>
+                    <i class="fas fa-sign-in-alt"></i><span class="nav-link-text ml-1">Fazer Login</span>
                   </a>
                 </li>
                 <?php
