@@ -10,3 +10,22 @@ body {
   text-shadow: 0.1px 0.1px 0.1px #ddd!important;
   clear: both!important;
 }
+.link-striped small {
+  font-size: 13px!important;
+  font-style: unset!important;
+  font-weight: 378!important;
+  color: blue!important;
+}
+form[name=formCadastroUser] input {
+  border:1px solid #ddd!important;
+  border-color: #ddd!important;
+  border-style: solid!important;
+  height: 41px!important;
+  font-size: 16px!important;
+  color: #353535!important;
+}
+form[name=formCadastroUser] button[type=submit] {
+  font-size: 17px!important;
+  font-style: unset!important;
+  color: #f8f8f8!important;
+}
