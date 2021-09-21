@@ -9,6 +9,13 @@
     </div>
     <div class="row">
       <div class="col-md-12 order-1">
+        <div id="resultCadastroUser">
+          <!-- HTML a ser requisitado perante requisição interna ajax -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 order-1">
         <div class="card">
           <div class="card-header d-flex justify-content-between">
             <small class="text-muted mb-0">Formulário de cadastro de usuário</small>
