@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 order-1">
+      <div class="col-md-12 order-1 mb-3">
         <div class="card">
           <div class="card-header d-flex justify-content-between">
             <small class="text-muted mb-0">Formulário de cadastro de usuário</small>
@@ -43,6 +43,12 @@
               </div>
               <button type="submit" class="btn btn-primary btn-block p-2">Cadastrar</button>
             </form>
+          </div>
+          <div class="card-footer">
+            <small class="mb-0">
+              Já possui cadastro ? Então
+              <a class="link-striped text-primary" href="http://localhost/login_mvc/loginuser">faça seu login</a>
+            </small>
           </div>
         </div>
       </div>
