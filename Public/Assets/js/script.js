@@ -46,3 +46,8 @@ $(document).ready(function(){
       });
   });
 });
+
+//define function realizando carregamento dá página
+function reload() {
+  window.location.reload();
+}
