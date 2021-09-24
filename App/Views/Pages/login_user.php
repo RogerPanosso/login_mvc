@@ -21,7 +21,7 @@
             <small class="text-muted">Formulário de login</small>
           </div>
           <div class="card-body">
-            <form id="formLoginUser" method="POST" action="http://localhost/login_mvc/ajaxloginuser/salvarCadastro">
+            <form id="formLoginUser" method="POST" action="http://localhost/login_mvc/ajaxloginuser/login">
               <div class="form-group">
                 <label for="email" class="form-label">E-Mail</label>
                 <input type="email" name="email" class="form-control" autocomplete="off" placeholder="exemplo@hotmail.com" id="email"/>
