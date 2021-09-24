@@ -29,3 +29,6 @@ form[name=formCadastroUser] button[type=submit] {
   font-style: unset!important;
   color: #f8f8f8!important;
 }
+.loginUser {
+  max-width: 400px!important;
+}
