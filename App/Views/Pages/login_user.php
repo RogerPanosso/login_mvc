@@ -35,7 +35,8 @@
           </div>
           <div class="card-footer">
             <small class="text-muted mb-0">
-              Ainda não possui cadastro ? <a class="link-striped text-primary" href="#">Cadastre-se</a>
+              Ainda não possui cadastro ?
+              <a class="link-striped text-primary" href="http://localhost/login_mvc/cadastrouser">Cadastre-se</a>
             </small>
           </div>
         </div>

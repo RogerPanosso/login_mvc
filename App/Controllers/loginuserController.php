@@ -17,5 +17,14 @@
     public function index() {
       $this->loadTemplate("login_user");
     }
+
+    public function logout() {
+      if(isset($_SESSION["login"]) and !empty($_SESSION["login"])) {
+        session_destroy();
+        header("Location: http://localhost/login_mvc/home");
+      }else {
+        header("Location: http://localhost/login_mvc/loginuser");
+      }
+    }
   }
 ?>

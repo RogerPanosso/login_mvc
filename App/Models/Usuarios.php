@@ -33,5 +33,37 @@
         return true;
       }
     }
+
+    private function hashSenha($email) {
+      $query = "SELECT senha FROM usuarios WHERE email = :email";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":email", $email);
+      $query->execute();
+      if($query->rowCount() > 0) {
+        $senha_usuario = $query->fetch(\PDO::FETCH_ASSOC);
+        return $senha_usuario["senha"];
+      }else {
+        return false;
+      }
+    }
+
+    public function login($email, $senha) {
+      $query = "SELECT * FROM usuarios WHERE email = :email and senha = :senha";
+      $query = $this->pdo->prepare($query);
+      $query->bindValue(":email", $email);
+      $query->bindValue(":senha", $this->hashSenha($email));
+      $query->execute();
+      if(password_verify($senha, $this->hashSenha($email)) == true) {
+        if($query->rowCount() > 0) {
+          $dados = $query->fetch(\PDO::FETCH_ASSOC);
+          $_SESSION["login"] = $dados;
+          return true;
+        }else {
+          return false;
+        }
+      }else {
+        return false;
+      }
+    }
   }
 ?>

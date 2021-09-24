@@ -36,7 +36,7 @@
                   if(isset($_SESSION["login"]) and !empty($_SESSION["login"])) {
                 ?>
                 <span class="navbar-text text-success">
-                  <?=$_SESSION["login"];?> seu login foi realizado com sucesso agora você podera obter acesso perante tais funcionalidades...
+                  <?=$_SESSION["login"]["nome"];?> seu login foi realizado com sucesso agora você podera obter acesso perante tais funcionalidades...
                 </span>
                 <li class="nav-item">
                   <a class="nav-link" href="http://localhost/login_mvc/loginuser/logout">
