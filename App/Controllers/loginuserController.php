@@ -18,6 +18,22 @@
       $this->loadTemplate("login_user");
     }
 
+    public function login() {
+      $usuario = new Usuarios();
+      $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+      $senha = trim(filter_input(INPUT_POST, "senha", FILTER_SANITIZE_STRING));
+      if($email == true and $senha == true) {
+        if($usuario->login($email, $senha) == true) {
+          header("Location: http://localhost/login_mvc/home");
+          return true;
+        }else {
+          echo "<script>window.alert('E-Mail ou Senha invalidos para login')</script>";
+          echo "<script>window.history.back()</script>";
+          return false;
+        }
+      }
+    }
+
     public function logout() {
       if(isset($_SESSION["login"]) and !empty($_SESSION["login"])) {
         session_destroy();

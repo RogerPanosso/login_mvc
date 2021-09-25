@@ -47,42 +47,27 @@ $(document).ready(function(){
   });
 });
 
-//define codigo jquery selecionando id de elemento HTML form de login de usuário bloquando sua ação padrão
+//define codigo jquery selecionando elemento HTML form perante documento(página)
 $(document).ready(function(){
-  $("#formLoginUser").on("submit", function(event){
-    event.preventDefault();
+  $("#formLoginUser").on("submit", function(){
     let form = document.querySelector("#formLoginUser");
     let email = $("#email").val();
     let senha = $("#senha").val();
 
+    //realiza verificação em valores obtidos
     if(email == "" || email.indexOf("@") == -1) {
-      window.alert("Por favor informe seu endereço de e-mail valido");
+      window.alert("Por favor informe um endereço de e-mail valido");
+      window.location.reload();
       return false;
     }
 
     if(senha == "") {
       window.alert("Por favor informe uma senha valida");
+      window.location.reload();
       return false;
     }
-
-    //realiza requisição interna ajax
-    $.ajax({
-      type:"POST",
-      url:"http://localhost/login_mvc/ajaxloginuser/login",
-      data:{
-        email:email,
-        senha:senha
-      },
-      error:function() {
-        window.alert("...");
-      },
-      success:function(html) {
-        window.location.href="http://localhost/login_mvc/home";
-      }
-    });
   })
 });
-
 //define function realizando carregamento dá página
 function reload() {
   window.location.reload();
