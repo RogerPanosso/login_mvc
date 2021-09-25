@@ -39,7 +39,7 @@
                   <?=$_SESSION["login"]["nome"];?> seu login foi realizado com sucesso agora você podera obter acesso perante tais funcionalidades...
                 </span>
                 <li class="nav-item">
-                  <a class="nav-link" href="http://localhost/login_mvc/loginuser/logout">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLogout">
                     <i class="fa fa-power-off"></i><span class="nav-link-text ml-1">Sair</span>
                   </a>
                 </li>
@@ -75,5 +75,34 @@
     <script src="http://localhost/login_mvc/Public/Assets/js/script.js"></script>
     <script src="http://localhost/login_mvc/Public/Fontawesome/js/all.min.js"></script>
     <script src="http://localhost/login_mvc/Public/Fontawesome/js/fontawesome.min.js"></script>
+    <!-- Início modal logout -->
+    <div class="modal fade" id="ModalLogout" tabindex="-1" role="dialog" aria-labelledby="MyModal">
+      <div class="modal-dialog shadow-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title mb-0">Encerrar Sessão</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 order-1">
+                  <small class="text-muted mb-0">
+                    <?=$_SESSION["login"]["nome"];?> tem certeza de que deseja ecerrar sua sessão atual de login ?
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-light">
+            <a class="btn btn-primary" href="http://localhost/login_mvc/loginuser/logout">Sim</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim modal logout -->
   </body>
 </html>
