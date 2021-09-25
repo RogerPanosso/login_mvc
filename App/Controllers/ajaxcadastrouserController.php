@@ -31,10 +31,10 @@
         }
 
         if($usuario->salvarCadastro($nome, $email, $hash_senha, $data_nascimento) == true) {
-          $dados["retorno"] = "Cadastro de usuário realizado com sucesso. Faça seu login";
+          $dados["retorno"] = "Cadastro de usuário realizado com sucesso.";
           $this->loadView("success_cadastro", $dados);
         }else {
-          $dados["retorno"] = "Cadastro de usuário já realizado e valido para login";
+          $dados["retorno"] = "Cadastro de usuário já realizado e valido.";
           $this->loadView("error_cadastro", $dados);
         }
       }
